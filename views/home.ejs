@@ -1,0 +1,15 @@
+<%- include partials/header.ejs %>
+<h1>Home</h1>
+<%= homeStartingContentPr %>
+
+<% postList.forEach(function(elemet){ %>
+<div>
+   <label><%= elemet.title%></label>
+</div>
+
+<div>
+  <p><%= elemet.body%></p>
+</div>
+<% }) %>
+
+<%- include partials/footer.ejs %>
