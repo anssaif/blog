@@ -8,7 +8,9 @@
 </div>
 
 <div>
-  <p><%= elemet.body%></p>
+  <p><%= elemet.body.substring(0, 100) + "..." %>
+<a href="/posts/<%= elemet.title%>">Read Me</a>
+  </p>
 </div>
 <% }) %>
 
